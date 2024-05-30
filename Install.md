@@ -84,7 +84,6 @@ The binaries are built statically and should work on any Linux distribution.
 ### Customizing containerd
 
 containerd uses a configuration file located in `/etc/containerd/config.toml` for specifying daemon level options.
-A sample configuration file can be found [here](/docs/man/containerd-config.toml.5.md).
 ```bash
 mkdir /etc/containerd
 containerd config default > /etc/containerd/config.toml
