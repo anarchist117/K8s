@@ -9,3 +9,9 @@ kubectl get nodes -o wide
 kubectl get service --all-namespaces
 kubectl get pods -n kube-system
 ```
+
+```bash
+kubectl get nodes
+kubectl drain <node-name> --ignore-daemonsets
+kubectl delete node <node-name>
+```
