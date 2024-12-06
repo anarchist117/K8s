@@ -8,5 +8,5 @@ kubectl describe pod <pod_name>
 kubectl get configemaps
 ```
 ```
-kubectl exec -it <pod_name>
+kubectl exec -it <pod_name> -- bash
 ```
