@@ -19,3 +19,6 @@ kubectl port-forward <pod_name> 20000:80 &
 kubectl get service
 kubectl get endpoints
 ```
+```
+kubectl scale deployment "deployment_name" --replicas=3
+```
