@@ -22,3 +22,6 @@ kubectl get endpoints
 ```
 kubectl scale deployment "deployment_name" --replicas=3
 ```
+```
+kubectl get ingress
+```
