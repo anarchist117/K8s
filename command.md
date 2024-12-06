@@ -15,3 +15,6 @@ kubectl exec <pod_name> -- cat /etc/nginx/conf.d/default.conf
 ```
 kubectl port-forward <pod_name> 20000:80 &
 ```
+```
+kubectl get service
+```
