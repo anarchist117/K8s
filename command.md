@@ -26,5 +26,5 @@ kubectl scale deployment "deployment_name" --replicas=3
 kubectl get ingress
 ```
 ```
-kubectl get namespace
+kubectl get namespaces
 ```
