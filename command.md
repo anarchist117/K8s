@@ -17,4 +17,5 @@ kubectl port-forward <pod_name> 20000:80 &
 ```
 ```
 kubectl get service
+kubectl get endpoints
 ```
