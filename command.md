@@ -1,5 +1,6 @@
 ```
 kubectl get pod -w
+kubectl get pod -o wide
 ```
 ```
 kubectl describe pod <pod_name>
