@@ -28,3 +28,6 @@ kubectl get ingress
 ```
 kubectl get namespaces
 ```
+```
+kubectl delete -f .
+```
