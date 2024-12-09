@@ -35,3 +35,6 @@ kubectl delete -f .
 kubectl explain pod
 kubectl api-resources
 ```
+```
+kubectl get componentstatuses
+```
