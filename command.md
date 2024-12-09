@@ -31,3 +31,7 @@ kubectl get namespaces
 ```
 kubectl delete -f .
 ```
+```
+kubectl explain pod
+kubectl api-resources
+```
