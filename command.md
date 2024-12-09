@@ -38,3 +38,6 @@ kubectl api-resources
 ```
 kubectl get componentstatuses
 ```
+```
+kubectl exec --namespace kube-system nginx-ingress-controller cat /etc/nginx/nginx.conf
+```
