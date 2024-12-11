@@ -1,8 +1,10 @@
-etcd database
-Control plane: API, controller-manager, scheduler + kubelet
-kubelet on worker node
-kube-proxy
-CNI
-coredns, nodelocaldns
-ingress-nginx-controller
-certificate
+```
+1. etcd database
+2. Control plane: API, controller-manager, scheduler + kubelet
+3. kubelet on worker node
+4. kube-proxy
+5. CNI
+6. coredns, nodelocaldns
+7. ingress-nginx-controller
+8. certificate
+```
