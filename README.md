@@ -4,6 +4,10 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
+```
+kubectl completion bash > k8s.sh
+```
+
 ```bash
 kubectl get nodes -o wide
 kubectl get service --all-namespaces
