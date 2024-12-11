@@ -13,6 +13,9 @@ if
   complete -o default -F __start_kubectl k
 else
   complete -o default -o nospace -F __start_kubectl k
+
+cp k8s.sh /etc/profile.d/
+bash
 ```
 
 ```bash
