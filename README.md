@@ -20,6 +20,7 @@ bash
 
 ```bash
 kubectl get nodes -o wide
+kubectl get namespace
 kubectl get service --all-namespaces
 kubectl get pods -n kube-system
 ```
