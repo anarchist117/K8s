@@ -6,14 +6,19 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ```
 kubectl completion bash > k8s.sh
-
+```
+```
 nano k8s.sh
 alias k=kubectl
+
 if
+  complete -o default -F __start_kubectl kubectl
   complete -o default -F __start_kubectl k
 else
+  complete -o default -o nospace -F __start_kubectl kubectl
   complete -o default -o nospace -F __start_kubectl k
-
+```
+```
 cp k8s.sh /etc/profile.d/
 bash
 ```
