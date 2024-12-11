@@ -18,4 +18,5 @@ group_vars/kube-ingress.yml
 ```
 ansible-playbook -i inventory/cluster/inventory.ini -b --diff cluster.yml 
 ansible-playbook -i inventory/cluster/inventory.ini -b --diff scale.yml
+ansible-playbook -i inventory/cluster/inventory.ini -b --diff upgrade-cluster.yml
 ```
