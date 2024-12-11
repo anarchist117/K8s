@@ -12,6 +12,8 @@ nano inventory/cluster/inventory.ini
 ```
 group_vars/all/etcd.yml
 group_vars/k8s-cluster/k8s-cluster.yml
+group_vars/k8s-cluster/addons.yml
+group_vars/kube-ingress.yml
 ```
 ```
 ansible-playbook -i inventory/cluster/inventory.ini cluster.yml -b -v
