@@ -1,8 +1,8 @@
 ```
 kubectl completion bash > k8s.sh
 ```
-```
 nano k8s.sh
+```
 alias k=kubectl
 
 if
