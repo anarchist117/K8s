@@ -41,3 +41,6 @@ kubectl get componentstatuses
 ```
 kubectl exec --namespace kube-system nginx-ingress-controller cat /etc/nginx/nginx.conf
 ```
+```
+kubectl get node <node_name> -o yaml
+```
