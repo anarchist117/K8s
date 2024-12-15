@@ -5,3 +5,6 @@ LoadBalancer
 ExternalName
 ExternalIPs
 ```
+```
+Headless
+```
