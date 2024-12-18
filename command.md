@@ -45,3 +45,6 @@ kubectl exec --namespace kube-system nginx-ingress-controller cat /etc/nginx/ngi
 ```
 kubectl get node <node_name> -o yaml
 ```
+```
+kubectl get pvc
+```
