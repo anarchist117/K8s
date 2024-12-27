@@ -25,4 +25,4 @@ kubectl get service --all-namespaces
 kubectl get pods -n kube-system
 ```
 
-
+https://github.com/kubernetes-sigs/kubespray/blob/master/docs/getting_started/getting-started.md
