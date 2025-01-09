@@ -2,10 +2,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: minimal-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx-example
+  ingressClassName: nginx
   rules:
   - http:
       paths:
@@ -13,6 +11,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: test
+            name: MyApp
             port:
               number: 80
