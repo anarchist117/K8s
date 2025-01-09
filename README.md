@@ -24,5 +24,8 @@ kubectl get namespace
 kubectl get service --all-namespaces
 kubectl get pods -n kube-system
 ```
+```
+curl <worker-external-ip>:<node-port> -H 'Host: web.domain.com'
+```
 
 https://github.com/kubernetes-sigs/kubespray/blob/master/docs/getting_started/getting-started.md
