@@ -18,4 +18,5 @@ http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-da
 
 # Documentation
 [Accessing Kubernetes Dashboard](https://github.com/kubernetes-sigs/kubespray/blob/master/docs/getting_started/getting-started.md#accessing-kubernetes-dashboard)
+
 [Getting a Bearer Token for ServiceAccount](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md#getting-a-bearer-token-for-serviceaccount)
