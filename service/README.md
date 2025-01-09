@@ -12,4 +12,4 @@ Headless
 ```
 
 # Documentation
-https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip
+[Service type](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
