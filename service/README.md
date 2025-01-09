@@ -1,9 +1,11 @@
+# Service type
 ```
 ClusterIP
 NodePort
 LoadBalancer
 ExternalName
 ```
+# Extensions
 ```
 ExternalIPs
 Headless
