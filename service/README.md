@@ -1,0 +1,10 @@
+```
+ClusterIP
+NodePort
+LoadBalancer
+ExternalName
+```
+```
+ExternalIPs
+Headless
+```
