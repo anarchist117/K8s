@@ -14,3 +14,7 @@ kubectl -n kubernetes-dashboard create token admin-user
 ```
 http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#/login
 ```
+
+
+# Documentation
+https://github.com/kubernetes/dashboard/blob/master/docs/user/accessing-dashboard/README.md
