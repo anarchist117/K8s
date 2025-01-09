@@ -2,7 +2,7 @@
 ```
 ssh -L8001:localhost:8001 user@remote-host
 ```
-# 2. Satrt proxy
+# 2. Start proxy
 ```
 kubectl proxy --port=8001
 ```
