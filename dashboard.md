@@ -17,4 +17,4 @@ http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-da
 
 
 # Documentation
-https://github.com/kubernetes/dashboard/blob/master/docs/user/accessing-dashboard/README.md
+https://github.com/kubernetes-sigs/kubespray/blob/master/docs/getting_started/getting-started.md
