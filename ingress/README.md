@@ -5,4 +5,5 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main
 
 # Documentation
 [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+
 [Bare-metal considerations](https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/baremetal.md)
