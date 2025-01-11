@@ -2,7 +2,7 @@
 | --- | --- | --- |
 | [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip) |  |  |
 | [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport) |  |  |
-| [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) |  |  |
+| [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) | type: LoadBalancer |  |
 | [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/#externalname) |  |  |
 |  |  |  |
 | ClusterIP | clusterIP:   None | [Headless Services](https://kubernetes.io/docs/concepts/services-networking/service/#headless-services) |
