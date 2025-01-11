@@ -1,9 +1,9 @@
 | Service type | spec |  |
 | --- | --- | --- |
-| ClusterIP |  |  |
-| NodePort |  |  |
-| LoadBalancer |  |  |
-| ExternalName |  |  |
+| [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip) |  |  |
+| [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport) |  |  |
+| [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) |  |  |
+| [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/#externalname) |  |  |
 |  |  |  |
 | ClusterIP | clusterIP:   None | [Headless Services](https://kubernetes.io/docs/concepts/services-networking/service/#headless-services) |
 | Any Service | externalIPs: 1.2.3.4 | [External IPs](https://kubernetes.io/docs/concepts/services-networking/service/#external-ips) |
