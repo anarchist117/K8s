@@ -18,5 +18,6 @@ group_vars/all/etcd.yml
 ```
 ansible-playbook -i inventory/cluster/inventory.ini -b --diff cluster.yml 
 ansible-playbook -i inventory/cluster/inventory.ini -b --diff scale.yml
+ansible-playbook -i inventory/cluster/inventory.ini -b --diff remove-node.yml
 ansible-playbook -i inventory/cluster/inventory.ini -b --diff upgrade-cluster.yml
 ```
