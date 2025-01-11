@@ -4,8 +4,9 @@
 | NodePort |  |  |
 | LoadBalancer |  |  |
 | ExternalName |  |  |
-| --- | --- | --- |
-|  |  | Headless |
+|  |  |  |
+| ClusterIP |   externalIPs:
+  - 1.2.3.4 | Headless |
 |  |  | External IPs |
 
 # Documentation
