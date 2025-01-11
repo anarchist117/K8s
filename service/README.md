@@ -1,7 +1,7 @@
 | Service type | spec | Description |
 | :--- | :--- | :--- |
 | [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip) |  | default Service type |
-| [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport) | type: NodePort |  |
+| [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport) | type: NodePort | Every node in the cluster configures itself to listen on that assigned port and to forward traffic to one of the ready endpoints associated with that Service |
 | [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) | type: LoadBalancer |  |
 | [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/#externalname) | type: ExternalName |  |
 |  |  |
