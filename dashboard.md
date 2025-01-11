@@ -4,7 +4,7 @@ ssh -L8001:localhost:8001 user@remote-host
 ```
 # 2. Start Proxy
 ```
-kubectl proxy --port=8001
+kubectl proxy
 ```
 # 3. Getting a Bearer Token
 ```
