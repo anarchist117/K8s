@@ -1,6 +1,6 @@
 | Service type | spec | Description |
 | :--- | :--- | :--- |
-| [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip) |  |  |
+| [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip) |  | default Service type |
 | [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport) | type: NodePort |  |
 | [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) | type: LoadBalancer |  |
 | [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/#externalname) | type: ExternalName |  |
