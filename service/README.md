@@ -7,4 +7,4 @@
 |  |  |
 | **Service extended** | **spec** | **Description** |
 | [Headless Services](https://kubernetes.io/docs/concepts/services-networking/service/#headless-services) | clusterIP: None | A headless Service allows a client to connect to whichever Pod it prefers, directly |
-| [External IPs](https://kubernetes.io/docs/concepts/services-networking/service/#external-ips) | externalIPs: 1.2.3.4 | If there are external IPs that route to one or more cluster nodes, Kubernetes Services can be exposed on those externalIPs |
+| [External IPs](https://kubernetes.io/docs/concepts/services-networking/service/#external-ips) | externalIPs: 1.2.3.4 | Kubernetes Services can be exposed on those externalIPs |
