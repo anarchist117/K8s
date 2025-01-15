@@ -12,6 +12,17 @@ spec:
   - 1.2.3.4
 
 kind: Deployment => DaemonSet
+spec:
+  template:
+    spec:
+      containers:
+        ports:
+        - name: http
+          containerPort: 80
+        - name: https
+          containerPort: 443
+        - name: stat
+          containerPort: 1024
 ```
 ```
 kubectl apply -f ingress.yml
