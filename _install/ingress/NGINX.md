@@ -7,7 +7,6 @@ nano ingress.yml
 
 kind: Service
 spec:
-  type: NodePort => ClusterIP
   externalIPs:
   - 1.2.3.4
 
