@@ -1,6 +1,6 @@
 # Install the HAProxy Ingress Controller
 ```
-curl https://github.com/haproxytech/kubernetes-ingress/blob/master/deploy/haproxy-ingress.yaml > ingress.yml
+curl https://raw.githubusercontent.com/haproxytech/kubernetes-ingress/master/deploy/haproxy-ingress.yaml > ingress.yml
 ```
 ```
 nano ingress.yml
