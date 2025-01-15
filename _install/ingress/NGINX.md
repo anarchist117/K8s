@@ -1,4 +1,4 @@
-# Install the Ingress-Nginx Controller
+# Install the Nginx Ingress Controller
 ```
 curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/baremetal/deploy.yaml > ingress.yml
 ```
