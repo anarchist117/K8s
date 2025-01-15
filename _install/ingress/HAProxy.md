@@ -18,9 +18,9 @@ spec:
       containers:
         ports:
         - name: http
-          containerPort: 80
+          containerPort: 8080 => 80
         - name: https
-          containerPort: 443
+          containerPort: 8443 => 443
         - name: stat
           containerPort: 1024
 ```
