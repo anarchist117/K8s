@@ -18,6 +18,6 @@ kubectl apply -f ingress.yml
 ```
 
 # Documentation
-[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+[Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 
 [Bare-metal considerations](https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/baremetal.md)
