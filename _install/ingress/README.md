@@ -1,6 +1,20 @@
 # Install Ingress controller
 ```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/baremetal/deploy.yaml
+curl https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/baremetal/deploy.yaml > ingress.yml
+```
+```
+nano ingress.yml
+
+kind: Service
+spec:
+  type: NodePort => ClusterIP
+  externalIPs:
+  - 1.2.3.4
+
+kind: Deployment => DaemonSet
+```
+```
+kubectl apply -f ingress.yml
 ```
 
 # Documentation
