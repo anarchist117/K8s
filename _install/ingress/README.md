@@ -1,9 +1,2 @@
-# Install Ingress controller
-```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/baremetal/deploy.yaml
-```
-
 # Documentation
-[Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
-
-[Bare-metal considerations](https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/baremetal.md)
+[Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
