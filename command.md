@@ -49,3 +49,6 @@ kubectl get node <node_name> -o yaml
 ```
 kubectl get pvc
 ```
+```
+kubectl config set-context --current --namespace NamespaceName
+```
