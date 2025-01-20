@@ -6,5 +6,5 @@ apt-get install open-iscsi -y
 apt-get install nfs-common
 
 # Installation Requirements
-apt install bash curl util-linux grep gawk blkid lsblk
+apt install bash curl util-linux grep gawk
 ```
