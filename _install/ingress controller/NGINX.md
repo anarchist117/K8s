@@ -7,6 +7,7 @@ nano ingress.yml
 
 kind: Service
 spec:
+  tyoe: ClusterIP
   externalIPs:
   - 1.2.3.4
 
