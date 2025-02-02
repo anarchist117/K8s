@@ -1,13 +1,11 @@
+# Installation Requirements 
+[Ansible longhorn](https://github.com/anarchist117/Ansible/blob/main/longhorn.yml)
+
+# Check Script
 ```
-# Installing open-iscsi
-apt-get install open-iscsi -y
-
-# Installing NFSv4 client
-apt-get install nfs-common
-
-# Installation findmnt, awk
-apt install util-linux gawk
+curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/scripts/environment_check.sh | bash
 ```
 
 # Documentation
 [Install Longhorn on Kubernetes](https://longhorn.io/docs/1.8.0/deploy/install/)
+[Using the Environment Check Script](https://longhorn.io/docs/1.8.0/deploy/install/#using-the-environment-check-script)
