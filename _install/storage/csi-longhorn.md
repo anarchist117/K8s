@@ -1,7 +1,7 @@
-# Installation Requirements 
+# 1. Installation Requirements 
 [Ansible longhorn](https://github.com/anarchist117/Ansible/blob/main/longhorn.yml)
 
-# Check Script
+# 2. Check Script
 ```
 curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/scripts/environment_check.sh | bash
 ```
@@ -20,7 +20,14 @@ curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/scripts/en
 [INFO]  Cleanup completed.
 ```
 
-# Documentation
-[Install Longhorn on Kubernetes](https://longhorn.io/docs/1.8.0/deploy/install/)
+# 3. Installing Longhorn
+```
+kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/deploy/longhorn.yaml
+```
 
-[Using the Environment Check Script](https://longhorn.io/docs/1.8.0/deploy/install/#using-the-environment-check-script)
+# Documentation
+[Quick Installation](https://longhorn.io/docs/1.8.0/deploy/install/)
+
+[Environment Check Script](https://longhorn.io/docs/1.8.0/deploy/install/#using-the-environment-check-script)
+
+[Install with Kubectl](https://longhorn.io/docs/1.8.0/deploy/install/install-with-kubectl/)
