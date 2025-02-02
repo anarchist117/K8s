@@ -25,9 +25,16 @@ curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/scripts/en
 kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/deploy/longhorn.yaml
 ```
 
+# 4. Accessing the UI
+```
+kubectl -n longhorn-system get svc longhorn-frontend
+```
+
 # Documentation
 [Quick Installation](https://longhorn.io/docs/1.8.0/deploy/install/)
 
 [Environment Check Script](https://longhorn.io/docs/1.8.0/deploy/install/#using-the-environment-check-script)
 
 [Install with Kubectl](https://longhorn.io/docs/1.8.0/deploy/install/install-with-kubectl/)
+
+[Accessing the UI](https://longhorn.io/docs/1.8.0/deploy/accessing-the-ui/)
