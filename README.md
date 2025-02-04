@@ -18,6 +18,11 @@ cp k8s.sh /etc/profile.d/
 bash
 ```
 
+```
+nano ~/.bashrc
+export EDITOR=nano
+```
+
 ```bash
 kubectl get nodes -o wide
 kubectl get namespace
