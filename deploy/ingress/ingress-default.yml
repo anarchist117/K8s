@@ -5,6 +5,6 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: MyApp
+      name: my-app
       port:
         number: 80
