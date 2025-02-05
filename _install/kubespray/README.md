@@ -6,7 +6,7 @@ apt install -y python3-pip
 pip3 install -r requirements.txt
 ```
 ```
-cp -rfp inventory/sample/ inventory/cluster
+cp -r inventory/sample/ inventory/cluster
 nano inventory/cluster/inventory.ini
 ```
 ```
