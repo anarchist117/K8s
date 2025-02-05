@@ -12,4 +12,4 @@ kubectl get svc -n kubernetes-dashboard kubernetes-dashboard
 ```
 
 # Documentation
-[creating sample user](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
+[Creating sample user](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
