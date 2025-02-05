@@ -1,6 +1,6 @@
 # 1. Creating sample user
 ```
-kubectl apply -f [dashboard.yml](https://github.com/anarchist117/K8s/blob/main/_install/dashboard.yml)
+kubectl apply -f dashboard.yml
 ```
 # 2. Getting a long-lived Bearer Token for ServiceAccount
 ```
