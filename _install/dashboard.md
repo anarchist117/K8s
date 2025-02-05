@@ -6,6 +6,10 @@ kubectl apply -f dashboard.yml
 ```
 kubectl get secret admin-user -n kubernetes-dashboard -o jsonpath="{.data.token}" | base64 -d
 ```
+# 3. External-IP
+```
+kubectl get svc -n kubernetes-dashboard kubernetes-dashboard
+```
 
 # Documentation
 [creating sample user](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
