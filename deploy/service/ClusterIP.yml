@@ -6,7 +6,7 @@ spec:
   selector:
     app: my-app
   ports:
-    - name: name-of-service-port
-      protocol: TCP
+    - name: http        # Optional field. Name-of-service-port
+      protocol: TCP     # Optional field. Default network protocol
       port: 80
-      targetPort: 9376
+      targetPort: 3000  # Optional field. By default and for convenience, the `targetPort` is set to the same value as the `port` field.
