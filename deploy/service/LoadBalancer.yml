@@ -3,15 +3,11 @@ kind: Service
 metadata:
   name: service-loadbalancer
 spec:
+  type: LoadBalancer
   selector:
-    app: MyApp
+    app: my-app
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 80
       targetPort: 9376
-  clusterIP: 10.0.171.239
-  type: LoadBalancer
-status:
-  loadBalancer:
-    ingress:
-    - ip: 192.0.2.127
