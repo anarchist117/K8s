@@ -1,10 +1,10 @@
 ```
-kubectl describe nodes NodeName
+kubectl describe nodes control1
 
 Taints:             node-role.kubernetes.io/control-plane:NoSchedule
 ```
 ```
-nano daemonset.yml
+nano deployment.yml
 
 spec:
   tolerations:
@@ -16,8 +16,8 @@ spec:
 ```
 
 ```
-kubectl taint nodes NodeName key1=value1:NoSchedule
-kubectl taint nodes NodeName key1=value1:NoSchedule-
+kubectl taint nodes control1 key1=value1:NoSchedule
+kubectl taint nodes control1 key1=value1:NoSchedule-
 ```
 
 
