@@ -5,8 +5,9 @@ metadata:
 spec:
   clusterIP: None
   selector:
-    app: MyApp
+    app: my-app
   ports:
-    - protocol: TCP
+    - name: name-of-service-port
+      protocol: TCP
       port: 80
       targetPort: 9376
