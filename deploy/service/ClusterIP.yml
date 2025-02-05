@@ -7,6 +7,6 @@ spec:
     app: my-app
   ports:
     - name: http        # Optional field. Name-of-service-port
-      protocol: TCP     # Optional field. Default network protocol
+      protocol: TCP     # Optional field. Default network protocol is TCP
       port: 80
       targetPort: 3000  # Optional field. By default and for convenience, the `targetPort` is set to the same value as the `port` field.
