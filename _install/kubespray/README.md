@@ -16,7 +16,7 @@ group_vars/kube-ingress.yml
 group_vars/all/etcd.yml
 ```
 ```
-ansible-playbook -i inventory/cluster/inventory.ini --diff cluster.yml 
+ansible-playbook -i inventory/cluster/inventory.ini --diff cluster.yml --tags=ingress_nginx
 ansible-playbook -i inventory/cluster/inventory.ini --diff scale.yml
 ansible-playbook -i inventory/cluster/inventory.ini --diff remove-node.yml
 ansible-playbook -i inventory/cluster/inventory.ini --diff upgrade-cluster.yml
