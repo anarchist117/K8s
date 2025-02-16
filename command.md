@@ -32,6 +32,7 @@ kubectl get namespaces
 ```
 ```
 kubectl delete -f .
+kubectl delete pods -n longhorn-system --field-selector=status.phase=Failed
 ```
 ```
 kubectl explain pod
