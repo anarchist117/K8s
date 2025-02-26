@@ -24,7 +24,7 @@ curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/scripts/en
 ```
 curl -O https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/deploy/longhorn.yaml
 ```
-[Replace](https://github.com/longhorn/longhorn/releases/tag/v1.8.0) v1.8.x-head with v1.8.0 in the deployment manifest
+[Replace](https://github.com/longhorn/longhorn/releases/tag/v1.8.0) `v1.8.x-head` with `v1.8.0` in the deployment manifest
 ```
 kubectl apply -f longhorn.yaml
 ```
