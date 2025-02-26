@@ -39,3 +39,6 @@ kubectl api-resources
 ```
 kubectl config set-context --current --namespace NamespaceName
 ```
+```
+kubectl patch namespace longhorn-system -p '{"spec":{"finalizers":null}}' --type=merge
+```
