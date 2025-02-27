@@ -21,7 +21,7 @@ metadata:
   name: speedtest-service
 spec:
   selector:
-    app: speedtest
+    app: speedtest-app
   ports:
   - name: http
     protocol: TCP
@@ -35,16 +35,16 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: speedtest
+  name: speedtest-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: speedtest
+      app: speedtest-pod
   template:
     metadata:
       labels:
-        app: speedtest
+        app: speedtest-pod
     spec:
       containers:
       - name: speedtest
