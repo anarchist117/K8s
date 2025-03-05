@@ -47,10 +47,10 @@ spec:
           ports:
             - containerPort: 80
           volumeMounts:
-          - name: apache-www
+          - name: apache-volume
             mountPath: /usr/local/apache2/htdocs
       volumes:
-      - name: apache-www
+      - name: apache-volume
         hostPath:
           path: /mnt/data/apache/www
           type: Directory
