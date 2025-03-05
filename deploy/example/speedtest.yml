@@ -1,8 +1,29 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: admin@gmail.com
+    privateKeySecretRef:
+      name: letsencrypt
+    solvers:
+      - http01:
+          ingress:
+            ingressClassName: nginx
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: speedtest-ingress
+  name: speedtest
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
+  tls:
+  - hosts:
+    - speedtest.domain.com
+    secretName: speedtest-tls
   rules:
   - host: speedtest.domain.com
     http:
