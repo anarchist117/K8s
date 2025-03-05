@@ -6,8 +6,7 @@ dashboard_namespace: kubernetes-dashboard
 
 # Nginx ingress controller deployment
 ingress_nginx_enabled: true
-# ingress_nginx_host_network: false
-ingress_nginx_host_ports: false
+ingress_nginx_host_network: false
 ingress_nginx_service_type: ClusterIP
 # ingress_nginx_service_annotations:
 #   example.io/loadbalancerIPs: 1.2.3.4
