@@ -52,7 +52,7 @@ spec:
             - labelSelector:
                 matchLabels:
                   app: speedtest-pod
-              topologyKey: "kubernetes.io/hostname" 
+              topologyKey: "kubernetes.io/hostname"
       containers:
       - name: speedtest
         image: openspeedtest/latest
