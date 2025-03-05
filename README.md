@@ -1,26 +1,10 @@
 ```
-kubectl completion bash > k8s.sh
-```
-```
-nano k8s.sh
+nano ~/.bashrc
+
+export EDITOR=nano
 
 alias k=kubectl
-
-if
-  complete -o default -F __start_kubectl kubectl
-  complete -o default -F __start_kubectl k
-else
-  complete -o default -o nospace -F __start_kubectl kubectl
-  complete -o default -o nospace -F __start_kubectl k
-```
-```
-cp k8s.sh /etc/profile.d/
-bash
-```
-
-```
-nano ~/.bashrc
-export EDITOR=nano
+complete -F __start_kubectl k
 ```
 
 ```bash
