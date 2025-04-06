@@ -27,10 +27,10 @@ ingress_nginx_tolerations:
 
 # Cert manager deployment
 cert_manager_enabled: true
-# cert_manager_namespace: "cert-manager"
-# cert_manager_tolerations:
-#   - key: node-role.kubernetes.io/control-plane
-#     effect: NoSchedule
+cert_manager_namespace: "cert-manager"
+cert_manager_tolerations:
+  - key: "node-role.kubernetes.io/control-plane"
+    effect: "NoSchedule"
 # cert_manager_affinity:
 #  nodeAffinity:
 #    preferredDuringSchedulingIgnoredDuringExecution:
@@ -41,5 +41,6 @@ cert_manager_enabled: true
 #          operator: In
 #          values:
 #          - ""
-# cert_manager_nodeselector:
-#   kubernetes.io/os: "linux"
+cert_manager_nodeselector:
+  kubernetes.io/os: "linux"
+  node-role.kubernetes.io/control-plane: ""
