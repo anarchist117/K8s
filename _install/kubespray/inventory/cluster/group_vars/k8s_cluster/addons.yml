@@ -4,6 +4,9 @@
 dashboard_enabled: true
 dashboard_namespace: kubernetes-dashboard
 
+# Helm deployment
+helm_enabled: true
+
 # Nginx ingress controller deployment
 ingress_nginx_enabled: true
 ingress_nginx_host_network: false
