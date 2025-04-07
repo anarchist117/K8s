@@ -4,9 +4,6 @@
 dashboard_enabled: true
 dashboard_namespace: kubernetes-dashboard
 
-# Helm deployment
-helm_enabled: true
-
 # Nginx ingress controller deployment
 ingress_nginx_enabled: true
 ingress_nginx_host_network: false
@@ -15,22 +12,22 @@ ingress_nginx_service_type: ClusterIP
 #   example.io/loadbalancerIPs: 1.2.3.4
 # ingress_nginx_service_nodeport_http: 30080
 # ingress_nginx_service_nodeport_https: 30081
-ingress_publish_status_address: ""
-ingress_nginx_nodeselector:
-  kubernetes.io/os: "linux"
-  node-role.kubernetes.io/control-plane: ""
-ingress_nginx_tolerations:
-  - key: "node-role.kubernetes.io/control-plane"
-    operator: "Equal"
-    value: ""
-    effect: "NoSchedule"
+# ingress_publish_status_address: ""
+# ingress_nginx_nodeselector:
+#   kubernetes.io/os: "linux"
+#   node-role.kubernetes.io/control-plane: ""
+# ingress_nginx_tolerations:
+#   - key: "node-role.kubernetes.io/control-plane"
+#     operator: "Equal"
+#     value: ""
+#     effect: "NoSchedule"
 
 # Cert manager deployment
 cert_manager_enabled: true
 cert_manager_namespace: "cert-manager"
-cert_manager_tolerations:
-  - key: "node-role.kubernetes.io/control-plane"
-    effect: "NoSchedule"
+# cert_manager_tolerations:
+#   - key: "node-role.kubernetes.io/control-plane"
+#     effect: "NoSchedule"
 # cert_manager_affinity:
 #  nodeAffinity:
 #    preferredDuringSchedulingIgnoredDuringExecution:
@@ -41,6 +38,6 @@ cert_manager_tolerations:
 #          operator: In
 #          values:
 #          - ""
-cert_manager_nodeselector:
-  kubernetes.io/os: "linux"
-  node-role.kubernetes.io/control-plane: ""
+# cert_manager_nodeselector:
+#   kubernetes.io/os: "linux"
+#   node-role.kubernetes.io/control-plane: ""
