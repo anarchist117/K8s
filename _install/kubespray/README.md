@@ -1,11 +1,11 @@
 ```
-apt update && apt install -y git
+apt update && apt install -y git python3-pip
 ```
 ```
 git clone https://github.com/kubernetes-sigs/kubespray.git
 ```
 ```
-apt install -y python3-pip
+cd kubespray/
 pip3 install -r requirements.txt --break-system-packages
 ```
 ```
