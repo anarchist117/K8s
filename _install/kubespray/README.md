@@ -1,5 +1,5 @@
 ```
-apt install -y git
+apt update && apt install -y git
 ```
 ```
 git clone https://github.com/kubernetes-sigs/kubespray.git
