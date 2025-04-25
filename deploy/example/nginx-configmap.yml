@@ -47,7 +47,7 @@ spec:
         app: nginx-pod
     spec:
       containers:
-      - image: nginx:1.26
+      - image: nginx
         name: nginx
         ports:
         - containerPort: 80
