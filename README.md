@@ -2,6 +2,7 @@
 nano ~/.bashrc
 
 export EDITOR=nano
+alias ll='ls -la'
 alias k=kubectl
 complete -F __start_kubectl k
 ```
