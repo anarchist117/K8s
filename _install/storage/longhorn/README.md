@@ -3,7 +3,7 @@
 
 # 2. Check Script
 ```
-curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.8.0/scripts/environment_check.sh | bash
+curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.8.1/scripts/environment_check.sh | bash
 ```
 ```
 [INFO]  Required dependencies 'kubectl jq mktemp sort printf' are installed.
