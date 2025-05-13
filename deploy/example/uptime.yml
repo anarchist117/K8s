@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: uptime-ingress
 spec:
+  ingressClassName: nginx
   rules:
     - host: uptime.domain.com
       http:
