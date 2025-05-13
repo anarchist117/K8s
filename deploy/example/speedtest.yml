@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: speedtest
 spec:
+  ingressClassName: nginx
   rules:
   - host: speedtest.domain.com
     http:
