@@ -9,4 +9,4 @@ kubectl drain <node-name> --ignore-daemonsets
 kubectl delete node <node-name>
 ```
 
-https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+[Installing kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
