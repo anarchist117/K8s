@@ -3,12 +3,12 @@ kubectl get pods -w -o wide
 kubectl get pods --all-namespaces -l app.kubernetes.io/name=ingress-nginx --watch
 
 kubectl get ingress
-kubectl get service
+kubectl get service --all-namespaces
 kubectl get endpoints
 
 kubectl get namespaces
 kubectl get componentstatuses
-kubectl get node <node_name> -o yaml
+kubectl get node <node_name> -o wide
 kubectl get configemaps
 kubectl get pvc
 ```
