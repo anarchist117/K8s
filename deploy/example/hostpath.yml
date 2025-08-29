@@ -1,57 +1,62 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: apache-ingress
+  name: uptime-ingress
 spec:
   ingressClassName: nginx
   rules:
-    - host: web.domain.com
+    - host: uptime.domain.com
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: apache-service
+                name: uptime-service
                 port:
                   number: 80
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: apache-service
+  name: uptime-service
 spec:
   selector:
-    app: apache
+    app: uptime-pod
   ports:
     - name: http
       protocol: TCP
       port: 80
+      targetPort: 3001
+---
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apache
+  name: uptime-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: apache
+      app: uptime-pod
   template:
     metadata:
       labels:
-        app: apache
+        app: uptime-pod
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: worker1
       containers:
-        - name: apache
-          image: httpd:latest
+        - name: uptime-kuma
+          image: louislam/uptime-kuma
           ports:
-            - containerPort: 80
+            - containerPort: 3001
           volumeMounts:
-          - name: apache-volume
-            mountPath: /usr/local/apache2/htdocs
+          - name: hostpath-volume
+            mountPath: /app/data
+            readOnly: false
       volumes:
-      - name: apache-volume
-        hostPath:
-          path: /mnt/data/apache/www
-          type: Directory
+        - name: hostpath-volume
+          hostPath:
+            path: /mnt/host
+            type: Directory
