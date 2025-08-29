@@ -43,19 +43,17 @@ spec:
       labels:
         app: uptime-pod
     spec:
-      nodeSelector:
-        kubernetes.io/hostname: worker1
       containers:
         - name: uptime-kuma
           image: louislam/uptime-kuma
           ports:
             - containerPort: 3001
           volumeMounts:
-          - name: hostpath-volume
-            mountPath: /app/data
-            readOnly: false
+          - mountPath: /app/data
+            name: nfs-volume
       volumes:
-        - name: hostpath-volume
-          hostPath:
-            path: /mnt/host
-            type: Directory
+        - name: nfs-volume
+          nfs:
+            server: nfs.domain.com
+            path: /volume/nfs
+            readOnly: false
